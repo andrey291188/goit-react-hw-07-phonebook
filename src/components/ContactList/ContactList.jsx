@@ -46,7 +46,7 @@ const ContactLists = () => {
           </button>
         </li>
       ))}
-      {getVisibleContacts.length === 0 && !isLoading && error === "" && <p className={css.item}>I'm sorry, but there are not contacts</p>}
+      {getVisibleContacts.length === 0 && isLoading && error === "" && <p className={css.item}>I'm sorry, but there are not contacts</p>}
       {error && !isLoading && <p className={css.item}>{error}</p>}
     </ul>
   );
