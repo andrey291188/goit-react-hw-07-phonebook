@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const { contactList } = useSelector(state => state.phoneBook);
+
   const dispatch = useDispatch();
 
   const addContact = value => {
